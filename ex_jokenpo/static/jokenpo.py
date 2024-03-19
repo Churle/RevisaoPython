@@ -1,0 +1,1 @@
+jokenpo =["pedra","papel","tesoura"]
