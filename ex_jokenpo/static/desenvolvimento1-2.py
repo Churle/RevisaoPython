@@ -18,14 +18,21 @@ def jogo_numero():
     time.sleep(1)
     escolha3 = int(input("Digite o terceiro numero :"))
 
-
+#Escolhas erradas 
+    
     if (escolha1 < 0 or escolha1 > 15) or (escolha2 < 0 or escolha2 > 15) or (escolha3 < 0 or escolha3 > 15):
       for i in range(len(lista_musicos)):
         print("Musico 1 :", lista_musicos[i][3], ", Musico 2 : ", lista_musicos[i][9], ", Musico 3 : ", lista_musicos[i][14])
-        continue
+      
+#Chamando o numero aleatorio
+      
+      aleatorio = random.choice(lista_musicos)
+      print(f'A escolha aleatoria e {aleatorio}')
 
-    elif:
-      print(f'Musico1: {lista_musicos[escolha1]}, Musico2: {lista_musicos[escolha2]},Musico3: {lista_musicos[esoclha3]}')
+      continue
+
+    else:
+      print(f'Musico1: {lista_musicos[escolha1]}, Musico2: {lista_musicos[escolha2]},Musico3: {lista_musicos[escolha3]}')
       jogo = False
 
 jogo_numero()
